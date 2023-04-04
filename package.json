@@ -9,7 +9,7 @@
     "server":"nodemon server/index",
     "client":"npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "render-postbuild": "cross-env NPM_CONFIG_PRODUCTION=false npm install && npm install --prefix client"
+    "render-postbuild": "cross-env NPM_CONFIG_PRODUCTION=false npm install --prefix server && npm install --prefix client"
   },
   "keywords": [],
   "author": "",
