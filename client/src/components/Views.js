@@ -8,7 +8,7 @@ const Views = props =>{
   const [description, setDescription] = useState("");
    useEffect(() => {
     axios
-      .get(`http://localhost:8080/contents/${props.match.params.id}`)
+      .get(`https://carrerguide.onrender.com/contents/${props.match.params.id}`)
       .then((res) => {
         settitle(res.data.title);
         setDescription(res.data.description);
